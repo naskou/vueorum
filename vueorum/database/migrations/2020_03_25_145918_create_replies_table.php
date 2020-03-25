@@ -17,7 +17,7 @@ class CreateRepliesTable extends Migration
             $table->increments('id');
             $table->text('body');
 
-            $table->text('question_id')->unsigned();
+            $table->integer('question_id')->unsigned();
 
             $table->integer('user_id');
 
