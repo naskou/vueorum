@@ -12,7 +12,7 @@
         /**
          * Display a listing of the resource.
          *
-         * @return \Illuminate\Http\Response
+         * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
          */
         public function index()
         {
@@ -62,6 +62,7 @@
          *
          * @param \App\Model\Question $question
          * @return \Illuminate\Http\Response
+         * @throws \Exception
          */
         public function destroy(Question $question)
         {
